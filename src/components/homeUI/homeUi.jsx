@@ -136,7 +136,7 @@ export const TrainingGrid = ({ is375px, is820px }) => {
     <Grid2
       container
       spacing={2}
-      sx={{ justifyContent: "center", marginTop: "24px", }}
+      sx={{ justifyContent: "center", marginTop: "24px" }}
     >
       {classes.map((card) => (
         <Grid2 item xs={12} sm={6} md={6} key={card.id}>
@@ -453,6 +453,10 @@ export const ContactButton = ({ is720px }) => {
   const navigate = useNavigate();
   const toContactPage = () => {
     navigate("/about");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
   return (
     <Box
