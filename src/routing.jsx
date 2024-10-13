@@ -13,7 +13,7 @@ import AboutMain from "./screens/about/aboutMain";
 const Routing = () => {
   return (
     <>
-      <Router basename="/tripuralegendsmma">
+      <Router basename="/tripura_legends_mma">
         <Navbar />
         <Routes>
           <Route path="/" element={<Navigate to="/home" />} />
